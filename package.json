@@ -1,0 +1,28 @@
+{
+  "name": "base-bot01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "app/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "lint": "npm run lint --workspaces",
+    "test": "npm run test --workspaces"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/morteza-rostami-cs/base-bot01.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/morteza-rostami-cs/base-bot01/issues"
+  },
+  "homepage": "https://github.com/morteza-rostami-cs/base-bot01#readme"
+}
