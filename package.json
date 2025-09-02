@@ -10,8 +10,11 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces",
-    "lint": "npm run lint --workspaces",
-    "test": "npm run test --workspaces"
+    "lint1": "npm run lint --workspaces",
+    "test": "npm run test --workspaces",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write ."
   },
   "repository": {
     "type": "git",
@@ -20,9 +23,19 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/morteza-rostami-cs/base-bot01/issues"
   },
-  "homepage": "https://github.com/morteza-rostami-cs/base-bot01#readme"
+  "homepage": "https://github.com/morteza-rostami-cs/base-bot01#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.42.0",
+    "@typescript-eslint/parser": "^8.42.0",
+    "eslint": "^9.34.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unused-imports": "^4.2.0",
+    "eslint-plugin-vue": "^10.4.0",
+    "prettier": "^3.6.2"
+  }
 }
